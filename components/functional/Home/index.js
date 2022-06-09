@@ -2,6 +2,7 @@ import { HeroContainer, HeroContent, Circle, Img, Card, ImgContainer } from '../
 
 export default function Home() {
     return (
+        <>
         <HeroContainer>
             <HeroContent>
                 <Img />
@@ -11,12 +12,16 @@ export default function Home() {
                     </h1>
                     <p>
                     Duis ultricies lacus sed turpis tincidunt id aliquet risus. Bibendum est ultricies integer quis auctor. 
-                    Id eu nisl nunc mi. Eget nunc scelerisque in aliquam. Malesuada proin libero nunc consequat interdum.
-                    <br /><br />Image by 
+                    Id eu nisl nunc mi. Eget nunc scelerisque <a href="#">viverra mauris</a> in aliquam. Malesuada proin libero nunc consequat interdum.
+                    <br /><br /><i>Image by</i> <a href="#">Freepik</a>
                     </p>
                     <Circle />
                 </Card>
             </HeroContent>
         </HeroContainer>
+        <section>
+            
+        </section>
+        </>
     )
 }

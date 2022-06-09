@@ -34,4 +34,5 @@ export const SearchBar = styled.input.attrs({types: 'text', placeholder: 'Search
 export const BurgerMenu = styled.img.attrs({src: './images/menu-icon.svg'})`
     width: 35px;
     height: 35px;
+    cursor: pointer;
 `

@@ -9,6 +9,7 @@ const Global = createGlobalStyle`
     }
 
     html, body {
+        overflow-x: hidden;
         margin: 0;
         padding: 0;
     }

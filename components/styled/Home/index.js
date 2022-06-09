@@ -7,7 +7,6 @@ export const HeroContainer = styled.section`
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: row;
     background-color: ${orange}
 `
 
@@ -16,6 +15,28 @@ export const HeroContent = styled.div`
     flex-direction: row;
     width: calc(${contentfulWidth} + ${sidebarWidth});
     height: 100%;
+
+    @media(max-width: 750px) {
+        flex-direction: column;
+        width: 550px;
+
+        & > * {
+            width: 100% !important;
+        }
+    }
+
+    @media(max-width: 550px) {
+        flex-direction: column;
+        width: 100%;
+        
+        & > h1 {
+            font-size: 3rem !important;
+        }
+
+        & > p {
+            font-size: 0.5rem !important;
+        }
+    }
 `
 
 export const Circle = styled.div`
@@ -38,7 +59,7 @@ export const Img = styled.div`
 export const Card = styled.div`
     width: 85%;
     background-color: white;
-    padding: 60px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,15 +75,29 @@ export const Card = styled.div`
     & > p {
         font-family: 'Open Sans';
         margin-top: 39px;
+        margin-bottom: 34px;
         font-size: 1rem;
         line-height: 1.6;
 
-        a {
-            font-decoration: underline;
+        & > a {
+            text-decoration: none;
+            text-decoration: underline;
+            cursor: pointer;
+            color: black;
         }
 
         i {
             font-style: italic;
+        }
+    }
+
+    @media(max-width: 550px) {
+        & > h1 {
+            font-size: 3rem !important;
+        }
+
+        & > p {
+            font-size: 1rem !important;
         }
     }
 `

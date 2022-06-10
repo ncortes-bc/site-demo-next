@@ -7,7 +7,7 @@ export const contentfulSide = `(100vw - ${contentfulWidth}) / 2`;
 export const mediumSide = `(100vw - ${mediumWidth}) / 2`;
 export const mobileSide = `(100vw - ${mobileWidth}) / 2`;
 export const orange = '#ffb400';
-
+export const black = '#292D33'
 const Global = createGlobalStyle`
     * {
         box-sizing: border-box;

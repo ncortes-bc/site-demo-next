@@ -1,6 +1,6 @@
 import Global from '../components/styled/Global'
 import Header from '../components/functional/Layout/Header'
-import Home from '../components/functional/Home/Hero'
+import Home from '../components/functional/Home'
 
 export default function index() {
   return (

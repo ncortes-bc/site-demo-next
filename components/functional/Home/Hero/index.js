@@ -1,9 +1,9 @@
-import { HeroContainer, HeroContent, Circle, Img, Card } from '../../../styled/Home/Hero'
+import { Container, Content, Circle, Img, Card } from '../../../styled/Home/Hero'
 
 export default function Hero() {
     return (
-        <HeroContainer>
-            <HeroContent>
+        <Container>
+            <Content>
                 <Img />
                 <Card>
                     <h1>
@@ -16,7 +16,7 @@ export default function Hero() {
                     </p>
                     <Circle />
                 </Card>
-            </HeroContent>
-        </HeroContainer>
+            </Content>
+        </Container>
     )
 }

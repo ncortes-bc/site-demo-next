@@ -1,9 +1,9 @@
-import { SectionOneContainer, ColorBlock, DefCard, ShadowCard, TextBox } from '../../../styled/Home/SectionOne'
+import { Container, ColorBlock, DefCard, ShadowCard, TextBox } from '../../../styled/Home/SectionOne'
 import { InvButton } from '../../../styled/Inputs/InvButton'
 
 export default function SectionOne() {
     return (
-        <SectionOneContainer>
+        <Container>
             <ColorBlock />
             <DefCard />
             <ShadowCard />

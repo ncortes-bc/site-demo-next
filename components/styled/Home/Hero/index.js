@@ -1,16 +1,14 @@
 import styled from 'styled-components';
-import { contentfulWidth, orange } from '../../Global';
+import { contentfulWidth, sidebarWidth, orange } from '../../Global';
 
-const sidebarWidth = `(100vw - ${contentfulWidth}) / 2`;
-
-export const HeroContainer = styled.section`
+export const Container = styled.section`
     width: 100%;
     height: 100%;
     display: flex;
     background-color: ${orange}
 `
 
-export const HeroContent = styled.div`
+export const Content = styled.div`
     display: flex;
     flex-direction: row;
     width: calc(${contentfulWidth} + ${sidebarWidth});

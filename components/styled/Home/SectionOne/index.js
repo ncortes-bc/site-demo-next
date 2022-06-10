@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
-export const SectionOneContainer = styled.section`
+export const Container = styled.section`
     width: 100%;
     height: 600px;
     display: flex;

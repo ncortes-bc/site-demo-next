@@ -21,6 +21,6 @@ export default function SectionOne() {
                     Contact Us
                 </InvButton>
             </TextBox>
-        </SectionOneContainer>
+        </Container>
     )
 }

@@ -3,9 +3,9 @@ import SectionOne from './SectionOne'
 
 export default function Home() {
     return (
-        <HomeContainer>
+        <Container>
             <Hero />
             <SectionOne />
-        </HomeContainer>
+        </Container>
     )
 }

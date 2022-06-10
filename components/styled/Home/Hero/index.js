@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { contentfulWidth, sidebarWidth, orange } from '../../Global';
+import { contentfulWidth, mediumWidth, mobileWidth, mediumSide, orange } from '../../Global';
 
 export const Container = styled.section`
     width: 100%;
@@ -11,10 +11,10 @@ export const Container = styled.section`
 export const Content = styled.div`
     display: flex;
     flex-direction: row;
-    width: calc(${contentfulWidth} + ${sidebarWidth});
+    width: calc(${contentfulWidth} + ${mediumSide});
     height: 100%;
 
-    @media(max-width: 750px) {
+    @media(max-width: ${mediumWidth}) {
         flex-direction: column-reverse;
         width: 550px;
 
@@ -44,7 +44,7 @@ export const Img = styled.div`
     background-position: center;
     padding: 60px;
 
-    @media(max-width: 750px) {
+    @media(max-width: ${mediumWidth}) {
         height: 400px;
     }
 `
@@ -84,7 +84,7 @@ export const Card = styled.div`
         }
     }
 
-    @media(max-width: 550px) {
+    @media(max-width: ${mobileWidth}) {
         padding: 40px;
 
         & > h1 {

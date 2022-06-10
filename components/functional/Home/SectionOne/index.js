@@ -7,7 +7,7 @@ export default function SectionOne() {
             <ColorBlock />
             <Content>
                 <DefCard />
-                <ShadowCard/>
+                <ShadowCard />
                 <TextBox>
                     <h1>
                         Future City

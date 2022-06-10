@@ -3,7 +3,7 @@ import { orange } from '../../Global'
 
 export const InvButton = styled.button`
     background-color: white;
-    border: 2px solid ${orange};
+    border: 2px solid ${({color}) => color ? color : orange};
     cursor: pointer;
     width: 160px;
     height: 45px;
@@ -12,7 +12,7 @@ export const InvButton = styled.button`
     font-weight: bold;
 
     &:hover {
-        background-color: ${orange};
+        background-color: ${({color}) => color ? color : orange};
         color: white;
     }
 `

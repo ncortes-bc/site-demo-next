@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { contentfulWidth, orange } from '../Global';
+import { contentfulWidth, orange } from '../../Global';
 
 const sidebarWidth = `(100vw - ${contentfulWidth}) / 2`;
 
@@ -17,7 +17,7 @@ export const HeroContent = styled.div`
     height: 100%;
 
     @media(max-width: 750px) {
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 550px;
 
         & > * {
@@ -26,16 +26,7 @@ export const HeroContent = styled.div`
     }
 
     @media(max-width: 550px) {
-        flex-direction: column;
         width: 100%;
-        
-        & > h1 {
-            font-size: 3rem !important;
-        }
-
-        & > p {
-            font-size: 0.5rem !important;
-        }
     }
 `
 
@@ -54,6 +45,10 @@ export const Img = styled.div`
     background-size: auto 100%;
     background-position: center;
     padding: 60px;
+
+    @media(max-width: 750px) {
+        height: 400px;
+    }
 `
 
 export const Card = styled.div`
@@ -92,8 +87,10 @@ export const Card = styled.div`
     }
 
     @media(max-width: 550px) {
+        padding: 40px;
+
         & > h1 {
-            font-size: 3rem !important;
+            font-size: 3.5rem !important;
         }
 
         & > p {

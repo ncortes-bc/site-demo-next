@@ -7,7 +7,8 @@ export const contentfulSide = `(100vw - ${contentfulWidth}) / 2`;
 export const mediumSide = `(100vw - ${mediumWidth}) / 2`;
 export const mobileSide = `(100vw - ${mobileWidth}) / 2`;
 export const orange = '#ffb400';
-export const black = '#292D33'
+export const black = '#292D33';
+
 const Global = createGlobalStyle`
     * {
         box-sizing: border-box;
@@ -18,5 +19,6 @@ const Global = createGlobalStyle`
         margin: 0;
         padding: 0;
     }
-`
-export default Global
+`;
+
+export default Global;

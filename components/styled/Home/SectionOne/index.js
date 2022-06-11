@@ -4,7 +4,7 @@ import { sidebarWidth, contentfulWidth, mediumWidth, mobileWidth, orange } from 
 export const Container = styled.section`
     position: relative;
     width: 100%;
-    height: 620px;
+    height: 690px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,18 +18,16 @@ export const Container = styled.section`
 export const ColorBlock = styled.div`
     position: absolute;
     left: 0;
-    width: 550px;
+    width: 50%;
     height: 173px;
     background-color: ${orange};
     z-index: 2;
 
     @media(max-width: ${mediumWidth}) {
-        width: 350px;
         height: 150px;
         left: auto;
         top: 0;
     }
-
 
     @media(max-width: ${mediumWidth}) {
         width: 200px;
@@ -67,8 +65,8 @@ export const DefCard = styled.div`
     flex-shrink: 0;
 
     @media(max-width: ${contentfulWidth}) {
-        width: 350px;
-        height: 450px;
+        width: 310px;
+        height: 400px;
     }
     
     @media(max-width: ${mediumWidth}) {
@@ -94,8 +92,8 @@ export const ShadowCard = styled.div`
     box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
 
     @media(max-width: ${contentfulWidth}) {
-        width: 250px;
-        height: 350px;
+        width: 230px;
+        height: 264px;
     }
 
     @media(max-width: ${mediumWidth}) {

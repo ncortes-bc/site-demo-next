@@ -1,9 +1,10 @@
-import { Container, Content, Cards, NumberedCard, Img, CardDetail, Number, TextBox, Caption, Link } from '../../../styled/Home/SectionTwo'
+import { OffsetBlock, Container, Content, Cards, NumberedCard, Img, CardDetail, Number, TextBox, Caption, Link } from '../../../styled/Home/SectionTwo'
 import path from 'path'
 
 export default function SectionTwo({props}){
     return(
     <Container>
+        <OffsetBlock />
         <Content>
             <h1>Company Principles</h1>
             <p>Sample text. Click to select the text box. Images from <a>Freepik</a></p>

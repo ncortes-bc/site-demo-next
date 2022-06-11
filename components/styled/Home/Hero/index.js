@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { contentfulWidth, mediumWidth, mobileWidth, mediumSide, orange } from '../../Global';
+import { contentfulWidth, mediumWidth, mobileWidth, contentfulSide, orange } from '../../Global';
 
 export const Container = styled.section`
     width: 100%;
@@ -11,7 +11,7 @@ export const Container = styled.section`
 export const Content = styled.div`
     display: flex;
     flex-direction: row;
-    width: calc(${contentfulWidth} + ${mediumSide});
+    width: calc(${contentfulWidth} + ${contentfulSide});
     height: 100%;
 
     @media(max-width: ${mediumWidth}) {
@@ -40,7 +40,7 @@ export const Img = styled.div`
     height: 650px;
     background-image: url('images/strong-woman.jpeg');
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: cover;
     background-position: center;
     padding: 60px;
 

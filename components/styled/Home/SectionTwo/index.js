@@ -1,18 +1,28 @@
 import styled from "styled-components"
-import { contentfulWidth, mediumWidth, mobileWidth } from '../../Global'
+import { contentfulWidth, black, mediumWidth, mobileWidth } from '../../Global'
 
 export const Container = styled.div`
     width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: ${black};
 `
+
+export const OffsetBlock = styled.div`
+    width: 100%;
+    height: 400px;
+    background-color: white;
+`
+
 export const Content = styled.div`
-    width: ${contentfulWidth};
-    height: 450px;
     position: relative;
-    top: 150px;
+    bottom: 400px;
+    width: ${contentfulWidth};
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    align-items: center;
     flex-direction: column;
     text-align:center;
 
@@ -30,6 +40,10 @@ export const Content = styled.div`
             cursor: pointer;
         }
     }
+
+    @media(max-width: ${contentfulWidth}) {
+        width: 100%;
+    }
 `
 
 export const Cards = styled.div`
@@ -38,7 +52,11 @@ export const Cards = styled.div`
     flex-direction: row;
     justify-content: space-around;
     margin-top: 40px;
-    height: max-content;
+
+    @media(max-width: ${contentfulWidth}) {
+        flex-wrap: wrap;
+        align-items: center;
+    }
 `
     
 export const NumberedCard = styled.div`
@@ -47,6 +65,12 @@ export const NumberedCard = styled.div`
     flex-direction: column;
     align-items: center;
     width: 320px;
+    margin: 30px;
+
+    @media(max-width: ${contentfulWidth}) {
+        justify-content: center;
+        flex-direction: column;
+    }
 `
 
 export const Img = styled.img`
@@ -59,7 +83,10 @@ export const CardDetail = styled.div`
     flex-direction: row;
     text-align: left;
     margin-top: 20px;
-    flex-grow: 1;
+
+    @media(max-width: ${contentfulWidth}) {
+        width: 100%;
+    }
 `
 
 export const Number = styled.h1`

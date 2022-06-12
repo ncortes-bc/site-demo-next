@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { black, contentfulWidth } from '../../Global';
+import { black, contentfulWidth, mediumWidth, mobileWidth } from '../../Global';
 
 export const Container = styled.div`
   position: relative;
@@ -19,11 +19,21 @@ export const Content = styled.div`
   z-index: 1;
 
   & > h1 {
-    margin: 0 0 50px 0;
+    margin: 0 25px 50px 25px;
     color: white;
     font: 4.5rem 'Mako';
     font-weight: 400;
     text-align: center;
+  }
+
+  @media (max-width: ${contentfulWidth}) {
+    width: 100%;
+  }
+
+  @media (max-width: ${mobileWidth}) {
+    & > h1 {
+      font-size: 3rem;
+    }
   }
 `;
 
@@ -31,16 +41,33 @@ export const CardContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 0 30px;
 
   & > img {
     width: 60%;
     height: 60%;
     margin-top: 40px;
   }
+
+  @media (max-width: ${contentfulWidth}) {
+    flex-direction: column;
+    align-items: center;
+
+    & > img {
+      width: 100%;
+      padding: 10px 100px;
+    }
+  }
+
+  @media (max-width: ${mobileWidth}) {
+    & > img {
+      padding: 0;
+      width: 325px;
+    }
+  }
 `;
 
 export const Card = styled.div`
-  background-color: white;
   display: block;
   margin-right: 45px;
 
@@ -58,6 +85,14 @@ export const Card = styled.div`
     width: 100%;
     height: auto;
   }
+
+  @media (max-width: ${contentfulWidth}) {
+    margin: 10px 100px;
+  }
+
+  @media (max-width: ${mobileWidth}) {
+    width: 325px;
+  }
 `;
 
 export const ColorBlock = styled.div`
@@ -65,5 +100,13 @@ export const ColorBlock = styled.div`
   bottom: 0;
   background-color: white;
   width: 100%;
-  height: 425px;
+  height: 40%;
+
+  @media (max-width: ${contentfulWidth}) {
+    height: 60%;
+  }
+
+  @media (max-width: ${mediumWidth}) {
+    height: 65%;
+  }
 `;

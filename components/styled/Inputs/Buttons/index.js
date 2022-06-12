@@ -1,6 +1,18 @@
 import styled from 'styled-components';
 import { orange, black } from '../../Global';
 
+export const Button = styled.button`
+  background-color: ${({ color }) => (color ? color : orange)};
+  border: 2px solid ${({ color }) => (color ? color : orange)};
+  cursor: pointer;
+  width: 160px;
+  height: 45px;
+  font-size: 1rem;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  color: ${({ textColor }) => (textColor ? textColor : 'white')};
+`;
+
 export const InvButton = styled.button`
   background-color: white;
   border: 2px solid ${({ color }) => (color ? color : orange)};

@@ -1,5 +1,5 @@
 import { Form } from '../../../styled/Forms/ContactForm';
-import { Button } from '../../../styled/Inputs/Button';
+import { Button } from '../../../styled/Inputs/Buttons';
 import { black } from '../../../styled/Global';
 
 export default function ContactForm() {

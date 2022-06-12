@@ -2,8 +2,8 @@ import {
   Container,
   Content,
   TextColumns,
-} from "../../../styled/Home/SectionThree";
-import { Button } from "../../../styled/Inputs/Button";
+} from '../../../styled/Home/SectionThree';
+import { Button } from '../../../styled/Inputs/Buttons';
 
 export default function SectionThree() {
   return (

@@ -5,8 +5,8 @@ import {
   DefCard,
   ShadowCard,
   TextBox,
-} from "../../../styled/Home/SectionOne";
-import { InvButton } from "../../../styled/Inputs/InvButton";
+} from '../../../styled/Home/SectionOne';
+import { InvButton } from '../../../styled/Inputs/Buttons';
 
 export default function SectionOne() {
   return (

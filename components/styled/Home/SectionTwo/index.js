@@ -1,5 +1,11 @@
 import styled from 'styled-components';
-import { contentfulWidth, black, mediumWidth, mobileWidth } from '../../Global';
+import {
+  contentfulWidth,
+  black,
+  orange,
+  mediumWidth,
+  mobileWidth,
+} from '../../Global';
 
 export const Container = styled.div`
   width: 100%;
@@ -25,6 +31,7 @@ export const Content = styled.div`
   align-items: center;
   flex-direction: column;
   text-align: center;
+  margin-bottom: -300px;
 
   & > h1 {
     font: 3rem 'Mako';
@@ -54,6 +61,7 @@ export const Cards = styled.div`
   flex-direction: row;
   justify-content: space-around;
   margin-top: 40px;
+  margin-bottom: 100px;
 
   @media (max-width: ${contentfulWidth}) {
     flex-wrap: wrap;
@@ -120,4 +128,90 @@ export const Link = styled.a`
   color: white;
   text-decoration: none;
   border-bottom: 1px solid white;
+`;
+
+export const ConstrContainer = styled.div`
+  position: relative;
+  width: ${contentfulWidth};
+`;
+
+export const TextCard = styled.div`
+  position: relative;
+  text-align: left;
+  z-index: 2;
+  margin-left: 40px;
+  width: 600px;
+  padding: 30px;
+  background-color: white;
+
+  & > img {
+    width: 75px;
+    margin-bottom: 15px;
+  }
+
+  & > h1 {
+    margin: 0;
+    font: 4rem 'Mako';
+  }
+
+  & > p {
+    line-height: 1.6 !important;
+    font: 1rem 'Open Sans', sans-serif;
+  }
+`;
+
+export const Stripes = styled.img`
+  z-index: 0;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 0;
+  top: 140px;
+`;
+
+export const PictureCard = styled.div`
+  position: relative;
+  z-index: 1;
+  & > img {
+    width: 875px;
+  }
+  margin: -100px 0;
+`;
+
+export const Dots = styled.img`
+  position: absolute;
+  z-index: 3;
+  left: 40px;
+  width: 200px;
+  height: 200px;
+`;
+
+export const ComboCard = styled.div`
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  width: 612px;
+  margin-left: calc(${contentfulWidth} - 612px);
+
+  & > .textbox {
+    background-color: ${orange};
+    width: 50%;
+    padding: 40px 30px;
+    text-align: left;
+    & > h1 {
+      margin: 0;
+      font: 2rem 'Mako';
+    }
+    & > p {
+      margin: 20px 0;
+      font: 1rem 'Open Sans', sans-serif;
+    }
+  }
+  & > .image {
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    background-image: url('images/skyscraper.jpeg');
+  }
 `;

@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { contentfulWidth, black, mediumWidth, mobileWidth } from "../../Global";
+import styled from 'styled-components';
+import { contentfulWidth, black, mediumWidth, mobileWidth } from '../../Global';
 
 export const Container = styled.div`
   width: 100%;
@@ -27,12 +27,14 @@ export const Content = styled.div`
   text-align: center;
 
   & > h1 {
-    font: 3rem "Mako";
+    font: 3rem 'Mako';
     margin: 0;
+    padding: 0 15px;
   }
 
   & > p {
-    font: 1rem "Open Sans";
+    font: 1rem 'Open Sans';
+    padding: 0 15px;
 
     & > a {
       text-decoration: none;
@@ -91,7 +93,7 @@ export const CardDetail = styled.div`
 
 export const Number = styled.h1`
   margin: 0;
-  font: 2.2rem "Mako";
+  font: 2.2rem 'Mako';
   color: white;
   white-space: nowrap;
 `;
@@ -104,14 +106,14 @@ export const TextBox = styled.div`
 
 export const Caption = styled.p`
   width: 100%;
-  font: 1rem "Open Sans";
+  font: 1rem 'Open Sans';
   line-height: 1.5;
   color: white;
   margin: 8px 0 35px 0;
 `;
 
 export const Link = styled.a`
-  font: 0.87rem "Open Sans", sans-serif;
+  font: 0.87rem 'Open Sans', sans-serif;
   letter-spacing: 1px;
   font-weight: bold;
   padding-bottom: 5px;

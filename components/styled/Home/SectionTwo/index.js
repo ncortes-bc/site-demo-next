@@ -133,6 +133,14 @@ export const Link = styled.a`
 export const ConstrContainer = styled.div`
   position: relative;
   width: ${contentfulWidth};
+
+  @media (max-width: ${contentfulWidth}) {
+    width: ${mediumWidth};
+  }
+
+  @media (max-width: ${mediumWidth}) {
+    width: 100%;
+  }
 `;
 
 export const TextCard = styled.div`
@@ -158,6 +166,15 @@ export const TextCard = styled.div`
     line-height: 1.6 !important;
     font: 1rem 'Open Sans', sans-serif;
   }
+
+  @media (max-width: ${mediumWidth}) {
+    width: 90%;
+    margin: auto;
+
+    & > h1 {
+      font-size: 2.5rem;
+    }
+  }
 `;
 
 export const Stripes = styled.img`
@@ -167,15 +184,40 @@ export const Stripes = styled.img`
   position: absolute;
   left: 0;
   top: 140px;
+
+  @media (max-width: ${mediumWidth}) {
+    top: 0;
+  }
+
+  @media (max-width: ${mobileWidth}) {
+    display: none;
+  }
 `;
 
 export const PictureCard = styled.div`
   position: relative;
   z-index: 1;
+  margin: -100px 0;
+
   & > img {
     width: 875px;
   }
-  margin: -100px 0;
+
+  @media (max-width: ${contentfulWidth}) {
+    margin: -40px 0;
+
+    & > img {
+      width: 600px;
+    }
+  }
+
+  @media (max-width: ${mediumWidth}) {
+    margin: 0;
+
+    & > img {
+      width: 90%;
+    }
+  }
 `;
 
 export const Dots = styled.img`
@@ -184,6 +226,10 @@ export const Dots = styled.img`
   left: 40px;
   width: 200px;
   height: 200px;
+
+  @media (max-width: ${mediumWidth}) {
+    display: none;
+  }
 `;
 
 export const ComboCard = styled.div`
@@ -208,10 +254,32 @@ export const ComboCard = styled.div`
       font: 1rem 'Open Sans', sans-serif;
     }
   }
+
   & > .image {
     background-position: center;
     background-size: cover;
     width: 50%;
     background-image: url('images/skyscraper.jpeg');
+  }
+
+  @media (max-width: ${contentfulWidth}) {
+    width: 550px;
+    margin-left: calc(${mediumWidth} - 550px);
+  }
+
+  @media (max-width: ${mediumWidth}) {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+
+    & > .textbox {
+      width: 100%;
+    }
+
+    & > .image {
+      width: 100%;
+      height: 400px;
+    }
   }
 `;

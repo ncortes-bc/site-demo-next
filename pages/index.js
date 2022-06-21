@@ -13,7 +13,7 @@ export default function index(props) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const articles = getArticles();
   return {
     props: {
